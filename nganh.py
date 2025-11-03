@@ -111,7 +111,7 @@ def linear_forecast(df, days_ahead=14):
 
 # ----------------------- # Streamlit UI # -----------------------
 st.set_page_config(page_title="Cổ phiếu + MACD + RSI + GC/DC", layout="wide")
-st.title("📈 Phân tích & dự báo cổ phiếu (MACD + RSI + Golden/Death Cross + Mua tốt)")
+st.title("📈 Phân tích & dự báo cổ phiếu (Nên mua, nên bán, nên giữ hay theo dõi thêm)")
 stock_code = st.text_input("Nhập mã cổ phiếu:", "FPT").strip().upper()
 period = st.selectbox("Khoảng thời gian dữ liệu:", ["3mo", "6mo", "1y"], index=1)
 days_to_predict = st.slider("Số ngày dự đoán:", 5, 60, 14)
